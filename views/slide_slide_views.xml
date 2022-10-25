@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id='chess_view_slide_slide_form' model="ir.ui.view">
+        <field name="name">chess.slide.slide.form</field>
+        <field name="model">slide.slide</field>
+        <field name="inherit_id" ref='website_slides.view_slide_slide_form'/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='mime_type']" position="after">
+                <field name="fen"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>
